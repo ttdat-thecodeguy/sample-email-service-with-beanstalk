@@ -42,8 +42,8 @@ jobs:
       with:
         aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        application_name: email-service
-        environment_name: Email-service-env
+        application_name: mail-service
+        environment_name: Mail-service-env
         version_label: build-${{ github.run_id }}
         region: us-east-1
         deployment_package: deploy/application.jar
