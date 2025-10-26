@@ -27,7 +27,7 @@ jobs:
     - name: Build with Maven
       run: mvn clean package -DskipTests
     - name: Generate deployment package
-       |
+      run: |
        mkdir deploy
        cp target/*.jar deploy/application.jar
     - name: Configure AWS Credentials
